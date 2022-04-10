@@ -28,6 +28,7 @@ body {
   width: 100%;
   margin: 0 auto;
   padding: 0 15px;
+  position: relative;
 }
 @media (min-width: 576px) {
   .container {
@@ -158,7 +159,9 @@ body {
       padding: 5px 15px;
       margin-top: 50px;
       box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-      position: relative;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
     }
     .header__logo {
       height: 70px;
@@ -305,7 +308,6 @@ body {
     letter-spacing: 0.6rem;
     backface-visibility: hidden;
     width: 50%;
-    z-index: -1;
   }
     .heading-h1__main {
       display: block;
@@ -425,7 +427,7 @@ body {
       box-shadow: 0 0 10px rgba(0,0,0,.65);
     }
   
-}
+
 @media(max-width: 991.98px){
   .content-s  {
   position: absolute;
@@ -444,3 +446,64 @@ body {
   }
 }
 /* end search style */
+/* switch button */ 
+
+.switch-btn {
+  position: absolute;
+  bottom: 10%;
+  left: 50%;
+  color: #fff;
+  transform: translateX(-50%);
+  width: 7rem;
+  height: 2rem;
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: space-around;
+  border: none;
+  background-color: #285680;
+  cursor: pointer;
+}
+.switch-btn span {
+  display: inline-block;
+  font-size: 0.85rem;
+  padding-left: 10px;
+  font-family: "Roboto-medium";
+}
+.switch-btn .pause {
+
+  padding-left: 10px;
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: var(--clr-primary-5);
+  border-radius: var(--radius);
+  margin: 0;
+  display: block;
+  transition: var(--transition);
+}
+.slide .switch {
+  left: 50%;
+}
+.switch {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background: #4fba6f;
+  border-radius: 5px;
+  margin: 0;
+  display: block;
+  transition: .5s;
+}
+.video {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  position: relative;
+}
