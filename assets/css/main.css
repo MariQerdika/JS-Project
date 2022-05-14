@@ -22,6 +22,7 @@ body {
   font-family: "Roboto-regular";
   margin: 0;
   padding: 0;
+  background: rgb(209, 206, 206);
 }
 /* grid */
 .container {
@@ -551,3 +552,114 @@ body {
   color: red;
   transform: scale(1.3);
 }
+
+/* 
+here goes app.html style
+*/
+.info {
+  width: 30%;
+  margin: auto;
+  padding-top: 12%;
+}
+table {
+  border-collapse: collapse;
+}
+.list {
+  width: 80%;
+  margin: 50px auto;
+}
+.list tr th, .list tr td {
+  text-align: center;
+}
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 20px;
+}
+.info input[type=text], .info input[type=date]{
+  width: 100%;
+  padding: 10px 10px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-sizing: border-box;
+}
+input[type=date] {
+  padding: 8px;
+}
+form div.form-action-buttons {
+  text-align: right;
+  margin-top: 20px;
+}
+a {
+  cursor: pointer;
+  text-decoration: underline;
+  color: #0000ee;
+  margin-right: 4px;
+}
+label.validation-error {
+  color: red;
+  margin-left: 5px;;
+}
+.hide {
+  display: none;
+}
+.click, .form-action-buttons input, .add_f {
+  padding: 10px 22px;
+  background: #25a397;
+  color: #fff;
+  border-radius: 2px;
+  font-size: 15px;
+  text-decoration: none;
+  border: none;
+  cursor: pointer;
+}
+.add_f {
+  display: inline;
+}
+.click i {
+  padding-right: 10px;
+}
+.click:hover {
+  background: #259287;
+}
+.add_input {
+  display: flex;
+}
+.add_input  input {
+  margin: 0  5px;
+  width: 97%;
+}
+.add_input{
+  margin-bottom: 20px;
+}
+#create {
+  text-align: right;
+}
+.cars_field {
+  border: 1px solid #cec8c8;
+  background: #efefef;
+  padding: 10px;
+  margin-top: 20px;
+  position: relative;
+}
+.cars_field i {
+  color: red;
+}
+.cars_field > div >input {
+  width: 80% !important;
+}
+.add_f i {
+  padding-right: 10px;
+}
+.fa-times-circle {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+  cursor: pointer;
+}
+.add_input label {
+  padding-left: 8px;
+}
+/* here ends app.html style */
